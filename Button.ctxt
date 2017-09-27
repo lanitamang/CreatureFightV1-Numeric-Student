@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Button
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Button\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Button()
+comment1.text=\r\n\ Default\ constructor\ for\ objects\ of\ the\ Button\ class\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ an\ object\ of\ the\ Button\ type\r\n
+comment2.params=c\ v
+comment2.target=Button(java.awt.Color,\ int)
+comment2.text=\r\n\ Button\ constructor\ that\ allows\ for\ customization\ of\ Button\ objects\r\n\ \r\n\ @param\ c\ is\ the\ Color\ that\ the\ Button\ will\ have\r\n\ @param\ v\ is\ the\ numerical\ value\ that\ is\ associated\ with\ the\ button\r\n\ @return\ an\ object\ of\ the\ Button\ type\r\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Button\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=4

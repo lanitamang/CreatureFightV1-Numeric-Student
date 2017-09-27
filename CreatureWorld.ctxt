@@ -1,10 +1,16 @@
 #BlueJ class context
 comment0.target=CreatureWorld
-comment0.text=\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (Nash\ Tamang)\r\n\ course\:\ CS20S\r\n\ Teacher\:\ MrHardman\r\n\ Lab\ \#1,\ program\#1\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=CreatureWorld()
-comment1.text=\n\ Default\ constructor\ for\ objects\ of\ class\ MyWorld.\n\ \n\ @param\ There\ are\ no\ parameters\n\ @return\ an\ object\ of\ class\ MyWorld\n
+comment1.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ an\ object\ of\ class\ MyWorld\r\n
 comment2.params=
-comment2.target=void\ act()
-comment2.text=\n\ act\ will\ complete\ actions\ that\ the\ CreatureWorld\ object\ should\n\ accomplish\ while\ the\ scenario\ is\ running\n\ \n\ @param\ There\ are\ no\ parameters\n\ @return\ Nothing\ is\ returned\n
-numComments=3
+comment2.target=void\ prepareCreatures()
+comment3.params=
+comment3.target=Creature\ getPlayerOne()
+comment4.params=
+comment4.target=Creature\ getPlayerTwo()
+comment5.params=
+comment5.target=void\ act()
+comment5.text=\r\n\ act\ will\ complete\ actions\ that\ the\ CreatureWorld\ object\ should\r\n\ accomplish\ while\ the\ scenario\ is\ running\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+numComments=6

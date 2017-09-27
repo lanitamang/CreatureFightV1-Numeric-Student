@@ -8,6 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Creature extends Actor
 {
+    private HealthBar creatureBar;
+    private int healthNumber;
+    private int playerOwnership;
+    
     
     /**
      * Default constructor for objects of the Creature class
@@ -17,7 +21,9 @@ public class Creature extends Actor
      */
     public Creature()
     {
-
+      healthNumber = 500;
+      healthNumber = 0;
+      creatureBar = new HealthBar ( healthNumber, healthNumber, 10 );
     }
 
     /**
@@ -29,8 +35,21 @@ public class Creature extends Actor
      */
     public Creature( int health, int whichPlayer )
     {
-
+      healthNumber = health;
+      playerOwnership = whichPlayer; 
+      creatureBar = new HealthBar ( healthNumber, healthNumber, 10 );
     }
+    protected HealthBar getHealthBar()
+    {
+      return creatureBar;  
+    }
+   
+    public int getPlayerOwnership()
+    {
+       return playerOwnership;  
+    }
+    
+    
     
     /**
      * attack is the code that is run when the Creature attacks its enemy
