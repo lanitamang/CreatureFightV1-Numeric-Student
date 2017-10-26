@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=TextBox
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ TextBox\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=message\ fs\ hasBorder\ fg\ bg
+comment1.target=TextBox(java.lang.String,\ int,\ boolean,\ java.awt.Color,\ java.awt.Color)
+comment2.params=
+comment2.target=void\ display()
+comment3.params=
+comment3.target=java.lang.String\ getText()
+comment4.params=message
+comment4.target=void\ setText(java.lang.String)
+comment5.params=
+comment5.target=void\ act()
+comment5.text=\r\n\ Act\ -\ do\ whatever\ the\ TextBox\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=6

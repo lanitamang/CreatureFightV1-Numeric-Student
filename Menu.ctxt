@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Menu
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Menu\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=tb\ i\ fs\ mfg\ mbg\ sfg\ sbg\ mc
+comment1.target=Menu(java.lang.String,\ java.lang.String,\ int,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ MenuCommands)
+comment2.params=
+comment2.target=Menu()
+comment3.params=w
+comment3.target=void\ addedToWorld(greenfoot.World)
+comment4.params=
+comment4.target=void\ act()
+comment4.text=\r\n\ Act\ -\ do\ whatever\ the\ Menu\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment5.params=
+comment5.target=void\ handleMouse()
+numComments=6

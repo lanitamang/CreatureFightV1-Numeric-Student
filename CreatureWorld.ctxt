@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=CreatureWorld
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (Nash\ Tamang)\r\n\ course\:\ CS20S\r\n\ Teacher\:\ MrHardman\r\n\ Lab\ \#1,\ program\#1\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (Nash\ Tamang)\r\n\ course\:\ CS20S\r\n\ Teacher\:\ MrHardman\r\n\ Lab\ \#2,\ program\#1\r\n\ @version\ (October\ 24,\ 2017)\r\n
 comment1.params=
 comment1.target=CreatureWorld()
 comment1.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ an\ object\ of\ class\ MyWorld\r\n
@@ -11,6 +11,10 @@ comment3.target=Creature\ getPlayerOne()
 comment4.params=
 comment4.target=Creature\ getPlayerTwo()
 comment5.params=
-comment5.target=void\ act()
-comment5.text=\r\n\ act\ will\ complete\ actions\ that\ the\ CreatureWorld\ object\ should\r\n\ accomplish\ while\ the\ scenario\ is\ running\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
-numComments=6
+comment5.target=int\ getTurnNumber()
+comment6.params=turn
+comment6.target=void\ setTurnNumber(int)
+comment7.params=
+comment7.target=void\ act()
+comment7.text=\r\n\ act\ will\ complete\ actions\ that\ the\ CreatureWorld\ object\ should\r\n\ accomplish\ while\ the\ scenario\ is\ running\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+numComments=8

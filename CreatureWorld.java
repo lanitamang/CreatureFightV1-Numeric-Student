@@ -9,13 +9,20 @@ import java.util.List;
  * @author (Nash Tamang)
  * course: CS20S
  * Teacher: MrHardman
- * Lab #1, program#1
- * @version (a version number or a date)
+ * Lab #2, program#1
+ * @version (October 24, 2017)
  */
 public class CreatureWorld extends World
 {
     private Creature playerOneCreature; 
     private Creature playerTwoCreature;
+    private int turnNumber;
+    private String playerOneName;
+    private String playerTwoName;
+    private Menu oneFightMenu;
+    private Menu oneSwitchMenu;
+    private Menu twoFightMenu;
+    private Menu twoSwitchMenu;
     /**
      * Default constructor for objects of class MyWorld.
      * 
@@ -26,19 +33,23 @@ public class CreatureWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(750, 750, 1);
+        turnNumber = 0;
         playerOneCreature = new Charmander(this);
         playerTwoCreature = new Pikachu(this);
         
         prepareCreatures();
         Greenfoot.start();
+
     }
+    
+   
+    
+   
+    
     private void prepareCreatures()
     {
       addObject( playerOneCreature, playerOneCreature.getImage().getWidth()/2, getHeight() - playerOneCreature.getImage().getHeight()/2);
-      addObject( new Button(Color.RED,50),500, 700);
-      
       addObject( playerTwoCreature, playerTwoCreature.getImage().getWidth() + 510, getHeight() - playerTwoCreature.getImage().getHeight() + -570 );
-      addObject( new Button(Color.RED, 50),280,70);
     }
    
     public Creature getPlayerOne()
@@ -51,6 +62,17 @@ public class CreatureWorld extends World
       return playerTwoCreature;  
     }
     
+     public int getTurnNumber()
+    {
+       return  turnNumber;
+    }
+    
+     public void setTurnNumber( int turn )
+    {
+       turnNumber =  turn;
+    }
+    
+    
     /**
      * act will complete actions that the CreatureWorld object should
      * accomplish while the scenario is running
@@ -61,11 +83,40 @@ public class CreatureWorld extends World
     public void act()
     {
       List allObjects=getObjects(null);
+      
+      if( turnNumber == 0 )
+      {
+         playerOneName = JOptionPane.showInputDialog( "PlayerOne, please enter your name ", null );
+         playerTwoName = JOptionPane.showInputDialog( "PlayerTwo, please enter your name ", null );
+         oneFightMenu = new Menu( "Fight", "Scratch \nFlamethrower", 24, Color.BLACK, Color.WHITE, Color.BLACK, Color.WHITE, new FightCommands() );
+         oneSwitchMenu = new Menu( "Switch", "Golem \nIvysaur", 24, Color.BLACK, Color.WHITE, Color.BLACK, Color.WHITE, new SwitchCommands() );
+         addObject( oneFightMenu, 173, getHeight() - 100 );
+         addObject( oneSwitchMenu, 241, getHeight() - 100 );
+         twoFightMenu = new Menu( "Fight", "Tackle \nThunderbolt", 24, Color.BLACK, Color.WHITE, Color.BLACK, Color.WHITE, new FightCommands() );
+         twoSwitchMenu = new Menu( "Switch", "Lapras \nPidgeot", 24, Color.BLACK, Color.WHITE, Color.BLACK, Color.WHITE, new SwitchCommands() );
+         addObject( twoFightMenu, 131, 75 );
+         addObject( twoSwitchMenu, 199, 75 );
+         turnNumber = 1;
+      }
+      else if( turnNumber == 1 )
+      {
+          showText( playerOneName +", your turn", getWidth()/2, getHeight()/2 );
+          showText( " ", getWidth()/2, getHeight()/2 + 26 ); 
+      }
+      else if( turnNumber == 2 )
+      {
+          showText( playerTwoName + "your turn", getWidth()/2, getHeight()/2 );
+          showText( " ", getWidth()/2, getHeight()/2 + 26 );
+      }
+      
+    
+      
       if ( playerTwoCreature. getHealthBar().getCurrent() <=0 )
       {
          removeObjects(allObjects);
          showText("Player Two Wins",getWidth()/2, getHeight()/2 + 26);
          Greenfoot.stop();
+         
       }
       
       if( playerOneCreature. getHealthBar().getCurrent() <=0 )
@@ -73,6 +124,10 @@ public class CreatureWorld extends World
         removeObjects(allObjects);
         showText("Player One Wins",getWidth()/2,getHeight()/2 + 26);
         Greenfoot.stop();
-      } 
+      }
+      
+     
+      
+      
     }
 }
