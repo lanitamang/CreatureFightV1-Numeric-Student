@@ -100,7 +100,7 @@ public class Button extends Actor
         // Add your action code here.
         CreatureWorld world=(CreatureWorld)getWorld();
         Creature enemy;
-        if( getObjectsInRange(500, Creature.class).get(0).getPlayerOwnership() == 1 )
+        if( getObjectsInRange(500, Creature.class).get(0).getWhetherPlayerOne() == true )
         {
           enemy = world.getPlayerTwo();  
         }
