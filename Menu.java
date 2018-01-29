@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.Color;
+
 
 /**
  * Write a description of class Menu here.
@@ -38,7 +38,7 @@ public class Menu extends Actor
     
     public Menu()
     {
-        this( "not intialized", "none", 24, Color.BLACK, Color.lightGray, Color.BLACK, Color.WHITE, null );
+        this( "not intialized", "none", 24, Color.BLACK, Color.LIGHT_GRAY, Color.BLACK, Color.WHITE, null );
     }
     
     protected void addedToWorld( World w )

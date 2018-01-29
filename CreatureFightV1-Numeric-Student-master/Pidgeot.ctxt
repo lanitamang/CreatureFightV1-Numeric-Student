@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Pidgeot
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pikachu\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=w
+comment1.target=Pidgeot(greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Pikachu\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=idx
+comment3.target=void\ attack(int)
+comment3.text=\r\nchecking\ if\ the\ health\ is\ taken\ away\ from\ the\ creatures\ healthBar\ \r\n\ \r\n\ @param\ there\ are\ parameters\ int\ idx\r\n\ @return\ there\ is\ nothing\ returned\r\n
+comment4.params=
+comment4.target=void\ attackAnimation()
+comment4.text=\r\n\ sets\ the\ location\ of\ where\ the\ attack\ is\ going\ to\ hit\ \r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ there\ is\ nothing\ returned\r\n
+comment5.params=idx
+comment5.target=void\ switchCreature(int)
+comment5.text=\r\n\ setting\ the\ location\ when\ you\ switch\ creatures\r\n\ \r\n\ @param\ there\ are\ parameters\ int\ idx\r\n\ @return\ there\ is\ nothing\ returned\r\n
+comment6.params=
+comment6.target=void\ switchedIn()
+comment6.text=\r\n\ switches\ the\ image\ of\ the\ creature\r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ there\ is\ nothing\ returned\r\n
+numComments=7

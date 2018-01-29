@@ -2,7 +2,7 @@
 comment0.target=Menu
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Menu\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=tb\ i\ fs\ mfg\ mbg\ sfg\ sbg\ mc
-comment1.target=Menu(java.lang.String,\ java.lang.String,\ int,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ MenuCommands)
+comment1.target=Menu(java.lang.String,\ java.lang.String,\ int,\ greenfoot.Color,\ greenfoot.Color,\ greenfoot.Color,\ greenfoot.Color,\ MenuCommands)
 comment2.params=
 comment2.target=Menu()
 comment3.params=w

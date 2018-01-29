@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.*;
+//import java.awt.*;
 
 /**
  * Write a description of class Button here.
@@ -30,18 +30,21 @@ public class Button extends Actor
         value = 50;
         
 
+        //buttonImage1.Color;
         buttonImage1.setColor(Color.BLUE);
         buttonImage1.fillRect(0, 0, 100, 50);
-        text1.setColor( Color.WHITE );
-        text1.setFont( new Font( "Helvetica", Font.BOLD, 30 ) );
+        text1.setColor(Color.WHITE);
+        //text1.setFont( new Font( "Helvetica", Font.BOLD, 30 ) );
+        text1.setFont( new Font( "Helvetica", 30 ) );
         text1.drawString("" + value, text1.getWidth()/3 + 1, text1.getHeight()/2 + 8);
 
         buttonImage1.drawImage( text1, 0, 0 );
 
-        buttonImage2.setColor( Color.MAGENTA );
+        buttonImage2.setColor(Color.MAGENTA);
         buttonImage2.fillRect(0, 0, 100, 50);
         text2.setColor( Color.BLACK );
-        text2.setFont( new Font( "Helvetica", Font.BOLD, 30 ) );
+        //text2.setFont( new Font( "Helvetica", Font.BOLD, 30 ) );
+        text2.setFont( new Font( "Helvetica", 30 ) );
         text2.drawString("" + value, text2.getWidth()/3 + 1, text2.getHeight()/2 + 8);
 
         buttonImage2.drawImage( text2, 0, 0 );
@@ -56,7 +59,7 @@ public class Button extends Actor
      * @param v is the numerical value that is associated with the button
      * @return an object of the Button type
      */
-    public Button( Color c, int v )
+    public Button(Color c, int v)
     {
         GreenfootImage text1 = new GreenfootImage(100 , 50);
         GreenfootImage text2 = new GreenfootImage(100 , 50);
@@ -74,8 +77,9 @@ public class Button extends Actor
 
         buttonImage1.setColor(c);
         buttonImage1.fillRect(0, 0, 100, 50);
-        text1.setColor( Color.WHITE );
-        text1.setFont( new Font( "Helvetica", Font.BOLD, 30 ) );
+        text1.setColor(Color.WHITE);
+        //text1.setFont( new Font( "Helvetica", Font.BOLD, 30 ) );
+        text1.setFont( new Font( "Helvetica", 30 ) );
         text1.drawString("" + value, text1.getWidth()/3 + 1, text1.getHeight()/2 + 8);
 
         buttonImage1.drawImage( text1, 0, 0 );
@@ -83,7 +87,8 @@ public class Button extends Actor
         buttonImage2.setColor( Color.BLACK );
         buttonImage2.fillRect(0, 0, 100, 50);
         text2.setColor( Color.WHITE );
-        text2.setFont( new Font( "Helvetica", Font.BOLD, 30 ) );
+        //text2.setFont( new Font( "Helvetica", Font.BOLD, 30 ) );
+        text2.setFont( new Font( "Helvetica", 30 ) );
         text2.drawString("" + value, text2.getWidth()/3 + 1, text2.getHeight()/2 + 8);
 
         buttonImage2.drawImage( text2, 0, 0 );

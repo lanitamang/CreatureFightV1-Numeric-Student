@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.*;
+//import java.awt.*;
 
 /**
  * Write a description of class HealthBar here.
@@ -149,7 +149,8 @@ public class HealthBar extends Actor
 
         text.clear();
         text.setColor( Color.BLACK );
-        text.setFont( new Font( "Times New Roman", Font.PLAIN, 20 ) );
+        //text.setFont( new Font( "Times New Roman", Font.PLAIN, 20 ) );
+        text.setFont( new Font( "Times New Roman", 20 ) );
         text.drawString(current + " / " + max, 0, HEIGHT-text.getFont().getSize()/2);
         frame.clear();
         frame.setColor( Color.GRAY );

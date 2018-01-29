@@ -2,7 +2,7 @@
 comment0.target=TextBox
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ TextBox\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=message\ fs\ hasBorder\ fg\ bg
-comment1.target=TextBox(java.lang.String,\ int,\ boolean,\ java.awt.Color,\ java.awt.Color)
+comment1.target=TextBox(java.lang.String,\ int,\ boolean,\ greenfoot.Color,\ greenfoot.Color)
 comment2.params=
 comment2.target=void\ display()
 comment3.params=
